@@ -1,0 +1,41 @@
+#include<stdio.h>
+void main()
+{
+chr str1[20],str2[20];
+int i,j,a,b,len1,len2;
+scanf("%s",str1);
+scanf("%s",str2);
+len1=strlen(str1);
+len2=strlen(str2);
+if(len1==len2)
+{
+for(i=0;i<len1;i++)
+{
+for(j=0;j<len2;j++)
+{
+a=str1[i]-str1[j];
+b=str2[i]-str2[j];
+if(a==b)
+{
+flag=0;
+}
+else
+{
+flag=i;
+}
+}
+}
+}
+else
+{
+printf("no");
+}
+if(flag==1)
+{
+printf("no");
+}
+else
+{
+printf("yes");
+}
+getch();
